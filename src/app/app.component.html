@@ -1,5 +1,11 @@
-<h2><a [routerLink]="'/users'">Users</a></h2>
+<div class="nav-bar">
+  <h2><a [routerLink]="'/users'">Users</a></h2>
 
-<h2><a [routerLink]="'/payment'">Payment</a></h2>
+  <h2><a [routerLink]="'/payment'">Payment</a></h2>
 
+  <h2><a [routerLink]="'/users/1'">My Account</a></h2>
+</div>
+
+<div class="content">
 <router-outlet></router-outlet>
+</div>
