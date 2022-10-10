@@ -1,6 +1,6 @@
 <div class="container">
   <h2>User Profile</h2>
-  <form #user="ngForm" (ngSubmit)="save(user)">
+  <form #userForm="ngForm" (ngSubmit)="save(userForm)">
     <div class="form-group">
       <label for="firstname">FirstName</label><br />
       <input
@@ -8,7 +8,7 @@
         type="text"
         name="firstname"
         class="form-control"
-        [ngModel]=""
+        [ngModel]="userObj.firstName"
         #firstname="ngModel"
       />
 
