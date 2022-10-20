@@ -1,5 +1,9 @@
 <div class="container">
   <h2>User Profile</h2>
+  <app-user-avatar
+    [imageUrl]="userObj.imageUrl"
+    (uploaded)="imageUploaded($event)"
+  ></app-user-avatar>
   <form #user="ngForm" (ngSubmit)="save(user)">
     <div class="form-group">
       <label for="firstname">FirstName</label><br />
